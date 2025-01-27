@@ -1,0 +1,19 @@
+.gradient-bg {
+    background: linear-gradient(120deg, #1a237e 0%, #283593 100%);
+  }
+  
+  .transaction-table th {
+    @apply px-6 py-3 text-left text-xs font-medium text-gray-500 uppercase tracking-wider;
+  }
+  
+  .transaction-table td {
+    @apply px-6 py-4 whitespace-nowrap;
+  }
+  
+  .status-card {
+    @apply p-4 rounded-lg;
+  }
+  
+  .expected-fund-item {
+    @apply border-l-4 border-blue-500 pl-4 mb-4;
+  }
