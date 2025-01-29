@@ -19,6 +19,8 @@ import EventList from "./components/EventList/EventList"
 import EventForm from "./components/EventForm/EventForm"
 import NoticeList from "./components/NoticeList/NoticeList"
 import NoticeForm from "./components/NoticeForm/NoticeForm"
+import BlogDetail from "./pages/Blogs/BlogDetail"
+import BlogDetails from "./pages/Blogs/BlogDetail"
 
 
 const Logout = () => {
@@ -53,7 +55,7 @@ function App() {
         <Route path="/register" element={<MainComponent children={<RegisterAndLogout />} />} />
         <Route path="/logout" element={<Logout />} />
         <Route path='/blogs' element={<MainComponent children={<Blogs />} />} />
-        <Route path='/blogs/:id' element={<MainComponent children={<Blogs />} />} />
+        <Route path='/blogs/:id' element={<MainComponent children={<BlogDetails />} />} />
         <Route path='/events' element={<MainComponent children={<Events />} />} />
         <Route path='/events/:id' element={<MainComponent children={<Events />} />} />
         <Route path='/notices' element={<MainComponent children={<Notices />} />} />
