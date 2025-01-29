@@ -99,14 +99,14 @@ const Navbar = () => {
               {loggedIn ? (
                 <button
                   onClick={handleLogout}
-                  className="px-4 py-2 rounded-md text-sm font-medium bg-red-600 text-white hover:bg-red-700 transition-colors duration-200"
+                  className="px-4 py-2 rounded-md text-sm font-medium text-white transition-colors duration-200"
                 >
                   Logout
                 </button>
               ) : (
                 <Link
                   to="/login"
-                  className="px-4 py-2 rounded-md text-sm font-medium bg-green-600 text-white hover:bg-green-700 transition-colors duration-200"
+                  className="px-4 py-2 rounded-md text-sm font-medium bg-green-700 text-white transition-colors duration-200"
                 >
                   Login
                 </Link>
@@ -183,7 +183,7 @@ const Navbar = () => {
           ) : (
             <Link
               to="/login"
-              className="block px-3 py-2 rounded-md text-base font-medium bg-green-600 text-white hover:bg-green-700"
+              className="block px-3 py-2 rounded-md text-base font-medium  text-white "
               onClick={() => setIsMenuOpen(false)}
             >
               Login
